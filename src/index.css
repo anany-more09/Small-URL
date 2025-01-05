@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 270 100% 97%; /* Light purple background */
+    --foreground: 250 15% 25%; /* Darker text for contrast */
+
+    --card: 270 100% 97%; /* Light purple card background */
+    --card-foreground: 250 15% 25%;
+
+    --popover: 270 100% 97%;
+    --popover-foreground: 250 15% 25%;
+
+    --primary: 270 60% 50%; /* Accent purple */
+    --primary-foreground: 270 100% 97%;
+
+    --secondary: 270 70% 90%; /* Subtle lighter purple */
+    --secondary-foreground: 250 15% 25%;
+
+    --muted: 270 70% 90%;
+    --muted-foreground: 250 10% 40%;
+
+    --accent: 270 60% 50%;
+    --accent-foreground: 270 100% 97%;
+
+    --destructive: 0 80% 50%; /* Red for destructive actions */
+    --destructive-foreground: 270 100% 97%;
+
+    --border: 270 50% 85%; /* Light purple border */
+    --input: 270 50% 85%;
+    --ring: 270 60% 50%; /* Purple focus ring */
+
+    --radius: 0.5rem; /* Keep the border radius consistent */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
